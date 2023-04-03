@@ -1,8 +1,5 @@
-// Talk Further, Google 
-const container = document.createElement('div');
+// Talk Further
 
-container.innerHTML =/*html*/ `
-<script>
 (function () {
     var a = document.createElement("script");
     var b = document.getElementsByTagName("script")[0];
@@ -12,7 +9,12 @@ container.innerHTML =/*html*/ `
     b.parentNode.insertBefore(a, b);
   }
   )();
-</script>
+
+
+// Google 
+const container = document.createElement('div');
+
+container.innerHTML =/*html*/ `
 <!-- Google Tag Manager -->
 <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KRFJ3K8>m.url=SOURCE_URL" data-credentials="include">
 </amp-analytics>
