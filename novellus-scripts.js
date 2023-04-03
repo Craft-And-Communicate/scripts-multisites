@@ -1,4 +1,8 @@
-// Talk Further Novellus - all communities
+// Talk Further, Google 
+const container = document.createElement('div');
+
+container.innerHTML =/*html*/ `
+<script>
 (function () {
     var a = document.createElement("script");
     var b = document.getElementsByTagName("script")[0];
@@ -8,11 +12,7 @@
     b.parentNode.insertBefore(a, b);
   }
   )();
-
-// Google 
-const container = document.createElement('div');
-
-container.innerHTML =/*html*/ `
+</script>
 <!-- Google Tag Manager -->
 <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KRFJ3K8>m.url=SOURCE_URL" data-credentials="include">
 </amp-analytics>
