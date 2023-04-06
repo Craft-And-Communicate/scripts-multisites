@@ -1,0 +1,106 @@
+<!-- Site-Wide - Head - Priority 5-->
+
+<!-- Talk Further -->
+<script aria-hidden="true" type="text/javascript">
+  (function () {
+    var a = document.createElement("script");
+    var b = document.getElementsByTagName("script")[0];
+    a.type = "text/javascript";
+    a.src = ('https:' == document.location.protocol ? 'https://' : 'https://') + "js.talkfurther.com/talkfurther_init.min.js";
+    a.async = true;
+    b.parentNode.insertBefore(a, b);
+  }
+  )();
+</script>
+
+<!-- Google Tag Manager -->
+<script aria-hidden="true">(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-KCRT55T');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script aria-hidden="true" async src="https://www.googletagmanager.com/gtag/js?id=UA-72002705-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72002705-1');
+  gtag('config', 'AW-667093063');
+</script>
+
+<!-- /* Favicon */ -->
+
+<link type="image/x-icon" rel="shortcut icon"
+  href="https://www.civitasseniorliving.com/wp-content/uploads/2022/05/csm_Civitas_favicon-new.png">
+
+
+<!-- UserWay Widget -->
+<script>(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "NRbHKoCnWQ"); s.setAttribute("src", "https://cdn.userway.org/widget.js"); (d.body || d.head).appendChild(s); })(document)</script>
+<noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website
+    accessibility</a></noscript>
+
+<!-- Hotjar Tracking Code for https://www.civitasseniorliving.com/ -->
+<script aria-hidden="true">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2781953, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+
+<!-- Open Nav Dropdowns on Focus -->
+<script type="text/javascript">
+
+  // Everytime the tab key is pressed, call the openAndCloseDropdown function.
+  document.addEventListener('keydown', function (event) {
+    if (event.which === 9) {
+      openAndCloseDropdown()
+    }
+  })
+
+  function openAndCloseDropdown() {
+    // On tab click, get the current element that is in focus
+    var currentElementWithFocus = document.activeElement
+
+    // If that element is a nav item that contains a dropdown
+    // then open the dropdown and apply elementor's styling
+    if (currentElementWithFocus.classList.contains('has-submenu')) {
+      var subMenu = currentElementWithFocus.nextElementSibling
+      currentElementWithFocus.ariaExpanded = true
+      currentElementWithFocus.classList.add('highlighted')
+      subMenu.ariaExpanded = true
+      subMenu.style.width = 'auto'
+      subMenu.style.minWidth = '10em'
+      subMenu.style.display = 'block'
+      subMenu.style.maxWidth = '1000px'
+      subMenu.style.top = 'auto'
+      subMenu.style.left = '0px'
+      subMenu.style.marginLeft = '0px'
+      subMenu.style.marginTop = '0px'
+      subMenu.style.zIndex = '3'
+
+      // Once the dropdown is open, grab the last li element in its ul
+      var lastDropdownItem = subMenu.lastElementChild
+
+      // Add a focusout event listener on the last li element.
+      // When that last li element is tabbed away from, close the dropdown
+      lastDropdownItem.addEventListener('focusout', function () {
+        currentElementWithFocus.ariaExpanded = false
+        currentElementWithFocus.classList.remove('highlighted')
+        subMenu.style.display = 'none'
+        subMenu.ariaExpanded = false
+        subMenu.style.zIndex = ''
+      })
+    }
+  }
+</script>

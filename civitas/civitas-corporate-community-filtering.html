@@ -1,0 +1,100 @@
+<!-- Corporate - Head - Priority 5 -->
+
+<!-- Community Filtering System  -->
+<script type="text/javascript">
+  //get all the sections with the links to the community sites
+  const allCommunities = document.getElementById('all-communities')
+  const arizonaCommunities = document.getElementById('arizona-communities')
+  const coloradoCommunities = document.getElementById('colorado-communities')
+  const floridaCommunities = document.getElementById('florida-communities')
+  const kentuckyCommunities = document.getElementById('kentucky-communities')
+  const oklahomaCommunities = document.getElementById('oklahoma-communities')
+  const texasCommunities = document.getElementById('texas-communities')
+
+  //hide all states sections except for "All Communities" section at first
+  arizonaCommunities.style.display = 'none'
+  coloradoCommunities.style.display = 'none'
+  floridaCommunities.style.display = 'none'
+  kentuckyCommunities.style.display = 'none'
+  oklahomaCommunities.style.display = 'none'
+  texasCommunities.style.display = 'none'
+
+  //get all the state filter links as a nodelist
+  // var filterLinksNodes = document.querySelectorAll('#menu-1-edf3e91 .menu-item');
+  var filterLinksNodes = document.querySelectorAll(
+    '#multi-buttons .elementor-button-wrapper a'
+  )
+  //turn nodelist into an array
+  var filterLinksElements = Array.prototype.slice.call(filterLinksNodes)
+
+  for (let i = 0; i < filterLinksElements.length; i++) {
+    filterLinksElements[i].addEventListener(
+      'click',
+      function showStateCommunities() {
+        if (filterLinksElements[i].classList.contains('all-communities')) {
+          allCommunities.style.display = 'block'
+          arizonaCommunities.style.display = 'none'
+          coloradoCommunities.style.display = 'none'
+          floridaCommunities.style.display = 'none'
+          kentuckyCommunities.style.display = 'none'
+          oklahomaCommunities.style.display = 'none'
+          texasCommunities.style.display = 'none'
+        }
+        if (filterLinksElements[i].classList.contains('arizona-communities')) {
+          allCommunities.style.display = 'none'
+          arizonaCommunities.style.display = 'block'
+          coloradoCommunities.style.display = 'none'
+          floridaCommunities.style.display = 'none'
+          kentuckyCommunities.style.display = 'none'
+          oklahomaCommunities.style.display = 'none'
+          texasCommunities.style.display = 'none'
+        }
+        if (filterLinksElements[i].classList.contains('colorado-communities')) {
+          allCommunities.style.display = 'none'
+          arizonaCommunities.style.display = 'none'
+          coloradoCommunities.style.display = 'block'
+          floridaCommunities.style.display = 'none'
+          kentuckyCommunities.style.display = 'none'
+          oklahomaCommunities.style.display = 'none'
+          texasCommunities.style.display = 'none'
+        }
+        if (filterLinksElements[i].classList.contains('florida-communities')) {
+          allCommunities.style.display = 'none'
+          arizonaCommunities.style.display = 'none'
+          coloradoCommunities.style.display = 'none'
+          floridaCommunities.style.display = 'block'
+          kentuckyCommunities.style.display = 'none'
+          oklahomaCommunities.style.display = 'none'
+          texasCommunities.style.display = 'none'
+        }
+        if (filterLinksElements[i].classList.contains('kentucky-communities')) {
+          allCommunities.style.display = 'none'
+          arizonaCommunities.style.display = 'none'
+          coloradoCommunities.style.display = 'none'
+          floridaCommunities.style.display = 'none'
+          kentuckyCommunities.style.display = 'block'
+          oklahomaCommunities.style.display = 'none'
+          texasCommunities.style.display = 'none'
+        }
+        if (filterLinksElements[i].classList.contains('oklahoma-communities')) {
+          allCommunities.style.display = 'none'
+          arizonaCommunities.style.display = 'none'
+          coloradoCommunities.style.display = 'none'
+          floridaCommunities.style.display = 'none'
+          kentuckyCommunities.style.display = 'none'
+          oklahomaCommunities.style.display = 'block'
+          texasCommunities.style.display = 'none'
+        }
+        if (filterLinksElements[i].classList.contains('texas-communities')) {
+          allCommunities.style.display = 'none'
+          arizonaCommunities.style.display = 'none'
+          coloradoCommunities.style.display = 'none'
+          floridaCommunities.style.display = 'none'
+          kentuckyCommunities.style.display = 'none'
+          oklahomaCommunities.style.display = 'none'
+          texasCommunities.style.display = 'block'
+        }
+      }
+    )
+  }
+</script>

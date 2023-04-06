@@ -1,20 +1,20 @@
 // Talk Further
 
-(function () {
-    var a = document.createElement("script");
-    var b = document.getElementsByTagName("script")[0];
-    a.type = "text/javascript";
-    a.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + "js.talkfurther.com/talkfurther_init.min.js";
-    a.async = true;
-    b.parentNode.insertBefore(a, b);
-  }
-  )();
+;(function () {
+  var a = document.createElement('script')
+  var b = document.getElementsByTagName('script')[0]
+  a.type = 'text/javascript'
+  a.src =
+    ('https:' == document.location.protocol ? 'https://' : 'http://') +
+    'js.talkfurther.com/talkfurther_init.min.js'
+  a.async = true
+  b.parentNode.insertBefore(a, b)
+})()
 
+// Google
+const container = document.createElement('div')
 
-// Google 
-const container = document.createElement('div');
-
-container.innerHTML =/*html*/ `
+container.innerHTML = /*html*/ `
 <!-- Google Tag Manager -->
 <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KRFJ3K8>m.url=SOURCE_URL" data-credentials="include">
 </amp-analytics>
@@ -37,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NHC2N94');</script>
 <!-- End Google Tag Manager -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics - Corporate only -->
 <script aria-hidden="true" async src="https://www.googletagmanager.com/gtag/js?id=UA-214283808-1"></script>
 <script aria-hidden="true">
   window.dataLayer = window.dataLayer || [];
@@ -46,5 +46,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'UA-214283808-1');
 
-`;
-  
+`
